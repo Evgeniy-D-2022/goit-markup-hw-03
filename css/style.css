@@ -11,6 +11,30 @@
 
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -18,6 +42,14 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background: var(--background-body-color);
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
 }
 
 a {
@@ -28,13 +60,24 @@ a {
     
     color: var(--primary-text-color);
     text-decoration: none;
-    
 }
 
-ul {
-    list-style: none;
-}
+
 /*-----header-----*/
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: aquamarine;
+
+}
+
+.header-list {
+    display: flex;
+}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -123,6 +166,10 @@ ul {
 
 /* --benefits--*/
 
+.benefits {
+    background-color: #f04d4d;
+}
+
 .our-benefits-title, .portfolio-title {
         position: absolute;
         width: 1px;
@@ -153,7 +200,9 @@ ul {
 }
 
 /* --about-- */
-
+.about {
+    background-color: #757575;
+}
 .about-title {
         font-weight: 700;
         font-size: 36px;
