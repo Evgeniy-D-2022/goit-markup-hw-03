@@ -52,6 +52,11 @@ body {
     outline: 1px solid red;
 }
 
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 a {
     font-weight: 500;
     font-size: 14px;
@@ -79,6 +84,9 @@ header .container {
     display: flex;
 }
 
+.header-list >li:not(:last-child) {
+    margin-right: 50px;
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -86,12 +94,15 @@ header .container {
     line-height: 1.19;  
     letter-spacing: 0.03em;
     color: var(--logo-color);
+    margin-right: 93px;
+    padding: 25px 0;
 }
 .logo-web {
     color: var(--accent-color);
 }
 
 .header-link {
+
     color: var(--primary-text-color);
 }
 .header-link.current {
@@ -112,6 +123,11 @@ header .container {
     color: var(--accent-color);
 }
 
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
 .header-mail, .header-tel {
     font-weight: 500;
     font-size: 14px;
@@ -130,19 +146,27 @@ header .container {
     color: var(--accent-color);
 }
 
+.header-mail {
+    margin-right: 50px;
+}
 /* --hero-- */
 .hero {
+    text-align: center;
+
     background: var(--background-hero-color);
+
+    padding: 200px 0;
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
+   
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -154,7 +178,6 @@ header .container {
     color: var(--primary-white-color);
 
     background: var(--accent-color);
-    
     cursor: pointer;
 }
 
