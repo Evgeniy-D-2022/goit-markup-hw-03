@@ -379,6 +379,7 @@ margin-bottom: 30px;
 
 .portfolio-filtr-item:not(:last-child) {
     margin-right: 8px;
+    
 }
 .filtr-btn {
     font-family: inherit;
@@ -428,6 +429,10 @@ h2 {
 .portfolio-gallery-info {
     background: var(--background-body-color);
     border: 1px solid var(--portfolio-gallery-info-border-color);
+    border-top: none;
     padding: 20px 24px;
+}
 
+.portfolio-gallery-title {
+    margin-bottom: 4px;
 }
